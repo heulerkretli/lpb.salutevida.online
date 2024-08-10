@@ -272,3 +272,86 @@ tr {
       font-style: italic;
       text-shadow: #000000 0px 1px 0px;
     }
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração do header */
+header {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    background-image: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+/* Estilo do container de comentários */
+#chat-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.text {
+    margin-left: 5px;
+}
+
+/* Estilo do formulário de comentários */
+#comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-comment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 10px;
+}
